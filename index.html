@@ -147,7 +147,7 @@
     <section class="features">
         <div class="feature-card">
             <h3>Fast & Lightweight</h3>
-            <p>Cryxcrax is designed to be lightning-fast and use minimal system resources, while only using half the amount ram that Google Chrome would use.*¹</p>
+            <p>Cryxcrax is designed to be lightning-fast and use minimal system resources, and uses half as much ram that Google Chrome would use.*¹</p>
         </div>
         <div class="feature-card">
             <h3>Tabbed Browsing</h3>
@@ -161,6 +161,24 @@
             <h3>Secure & Modern</h3>
             <p>Built on Python and PyQt6, Cryxcrax uses a modern rendering engine with security features to keep your browsing safe.</p>
         </div>
+        <div class="feature-card">
+            <h3>Development time</h3>
+            <p><p id="timePassed"></p>
+
+<script>
+function daysSince(dateString) {
+  const then = new Date(dateString);
+  const now = new Date();
+  const diff = now - then;
+  return Math.floor(diff / (1000 * 60 * 60 * 24));
+}
+
+// change this date to whatever you want
+const madeDate = "2025-11-08";
+document.getElementById("timePassed").textContent =
+  `${daysSince(madeDate)} days in development. aka. since 2025. November 08.`;
+</script></p>
+        </div>
     </section>
 </main>
 <footer>
@@ -170,4 +188,3 @@
 </footer>
 </body>
 </html>
-
