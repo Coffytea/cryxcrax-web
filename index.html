@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cryxcrax Browser</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0;
+        font-family: 'Nunito', 'Roboto', sans-serif;
+        background: #1e1e1e;
+        color: #e0e0e0;
+        overflow-x: hidden;
+    }
+
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background-image: repeating-linear-gradient(
+            45deg,
+            rgba(255,255,255,0.02),
+            rgba(255,255,255,0.02) 1px,
+            transparent 1px,
+            transparent 20px
+        );
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    header {
+        background: linear-gradient(90deg, #2b2b2b, #333333);
+        padding: 4rem 1rem;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 5rem;
+        color: #ffffff;
+        text-shadow: 1px 1px 5px #000;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+        position: relative;
+        z-index: 1;
+        padding: 4rem 1rem;
+    }
+
+    section {
+        max-width: 900px;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #fff;
+    }
+
+    p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        color: #dcdcdc;
+    }
+
+    .btn {
+        background: #444;
+        color: #fff;
+        padding: 1rem 2.5rem;
+        border: none;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 1.1rem;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .btn:hover {
+        background: #5a5a5a;
+        transform: translateY(-3px) scale(1.02);
+        cursor: pointer;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    }
+
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .feature-card {
+        background: #2b2b2b;
+        border-radius: 15px;
+        padding: 2rem;
+        flex: 1 1 250px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        transition: transform 0.3s ease;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-5px) scale(1.02);
+    }
+
+    .feature-card h3 {
+        margin-top: 0;
+        color: #fff;
+    }
+
+    .feature-card p {
+        color: #ccc;
+        font-size: 1rem;
+    }
+
+    footer {
+        text-align: center;
+        padding: 2rem 1rem;
+        background: #2b2b2b;
+        font-size: 0.9rem;
+        color: #aaa;
+        position: relative;
+        z-index: 1;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Cryxcrax Browser</h1>
+</header>
+<main>
+    <section>
+        <p>Experience the sleek, fast, and lightweight Cryxcrax Browser. Built in Python with a focus on simplicity and performance. Download now and start browsing smarter.</p>
+        <a class="btn" href="https://drive.google.com/uc?export=download&id=1-0XXCOt1nXN8PAn1jPPKtro627ZTX1o4" download>Download for Windows</a>
+    </section>
+    <section class="features">
+        <div class="feature-card">
+            <h3>Fast & Lightweight</h3>
+            <p>Cryxcrax is designed to be lightning-fast and use minimal system resources while providing a smooth browsing experience.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Tabbed Browsing</h3>
+            <p>Manage multiple pages easily with intuitive tab support, including easy-to-use navigation and quick switching between tabs.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Beta Release Phase</h3>
+            <p>The browser is currently in Version 1.0 Beta 1, bugs and visual glitches, etc. may be found.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Secure & Modern</h3>
+            <p>Built on Python and PyQt6, Cryxcrax uses a modern rendering engine with security features to keep your browsing safe.</p>
+        </div>
+    </section>
+</main>
+<footer>
+    &copy; 2025 Cryxcrax/Mult1c. All rights reserved.
+</footer>
+</body>
+</html>
