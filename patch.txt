@@ -1,0 +1,5 @@
+-Added changeble search engines to the browser:
+    Google
+    Bing
+    Yahoo!
+    DuckDuckGo
