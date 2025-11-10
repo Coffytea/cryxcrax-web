@@ -103,6 +103,7 @@
     .feature-card {
         background: #2b2b2b;
         border-radius: 15px;
+        height: fit-content;
         padding: 2rem;
         flex: 1 1 250px;
         box-shadow: 0 4px 12px rgba(0,0,0,0.4);
@@ -132,6 +133,17 @@
         position: relative;
         z-index: 1;
     }
+
+    .txt-content {
+    background: #3a3a3a;
+    color: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    white-space: pre-wrap;
+    font-family: sans-serif;
+    font-size: 1rem;
+    }
+
 </style>
 </head>
 <body>
@@ -163,7 +175,7 @@
         </div>
         <div class="feature-card">
             <h3>Beta Release Phase</h3>
-            <p>The browser is currently in Version 1.0 Beta 1, bugs and visual glitches, etc. may be found.</p>
+            <p>The browser is currently in Version 1.0 Beta 1.1, bugs and visual glitches, etc. may be found.</p>
         </div>
         <div class="feature-card">
             <h3>Secure & Modern</h3>
@@ -186,6 +198,12 @@ const madeDate = "2025-11-08";
 document.getElementById("timePassed").textContent =
   `${daysSince(madeDate)} days in development. aka. since 2025. November 08.`;
 </script></p>
+        </div>
+        <div class="feature-card">
+            <h3>Patch notes</h3>
+            <div class="txt-content">
+                <embed src="patch.txt">
+            </div>
         </div>
     </section>
 </main>
