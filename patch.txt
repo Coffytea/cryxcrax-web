@@ -3,3 +3,6 @@
     Bing
     Yahoo!
     DuckDuckGo
+patch 1:
+    -bugfixes
+    -new zoom
