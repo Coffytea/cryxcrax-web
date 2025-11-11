@@ -135,13 +135,33 @@
     }
 
     .txt-content {
-    background: #3a3a3a;
-    color: #fff;
-    padding: 1rem;
-    border-radius: .5rem;
-    white-space: pre-wrap;
-    font-family: sans-serif;
-    font-size: 1rem;
+        background: #3a3a3a;
+        color: #fff;
+        padding: 1rem;
+        border-radius: .5rem;
+        white-space: pre-wrap;
+        font-family: sans-serif;
+        font-size: 1rem;
+    }
+
+    .important-stuff {
+        background: #3a3a3a;
+        padding: 1rem;
+        border-radius: .5rem;
+        white-space: pre-wrap;
+        height: fit-content;
+    }
+
+    .left-allligned-importantstuff {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: left;
+        background: #3a3a3a;
+        padding: 1rem;
+        border-radius: .5rem;
+        white-space: pre-wrap;
+        height: fit-content;
     }
 
 </style>
@@ -205,6 +225,9 @@ document.getElementById("timePassed").textContent =
                 <embed src="patch.txt">
             </div>
         </div>
+    <div class="left-alligned-importantstuff">
+            <h3><b>Microsoft Defender SmartScreen may activate, since the app doesn't have a valid digital signature, but it is not malware.</b></h3>
+    </div>
     </section>
 </main>
 <footer>
@@ -213,5 +236,4 @@ document.getElementById("timePassed").textContent =
 </footer>
 </body>
 </html>
-
 
